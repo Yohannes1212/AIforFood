@@ -1,0 +1,10 @@
+A --> Bread
+B --> Cookies (OroSaiwa)
+
+left 24 hours before measurements at the following conditions:
+
+1 --> Open
+2 --> wrapped
+3 --> humid environment
+
+mesured at 300-900 MHz
