@@ -1,5 +1,5 @@
 
-product without additional features
+Without Storage Conditions
 ==================================================
 
 SVM
@@ -87,24 +87,24 @@ Classification Report:
 weighted avg       0.98      0.98      0.98       180
 
 
-product with additional features
+With Storage Conditions
 ==================================================
 
 SVM
 ------------------------------
 Best parameters: {'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
-Cross-validation accuracies: [1.0, 0.9444444444444444, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
-Mean accuracy: 0.9944 (±0.0167)
+Cross-validation accuracies: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+Mean accuracy: 1.0000 (±0.0000)
 
 Classification Report:
               precision    recall  f1-score   support
 
-           0       1.00      0.99      0.99        90
-           1       0.99      1.00      0.99        90
+           0       1.00      1.00      1.00        90
+           1       1.00      1.00      1.00        90
 
-    accuracy                           0.99       180
-   macro avg       0.99      0.99      0.99       180
-weighted avg       0.99      0.99      0.99       180
+    accuracy                           1.00       180
+   macro avg       1.00      1.00      1.00       180
+weighted avg       1.00      1.00      1.00       180
 
 
 Random Forest
@@ -161,16 +161,16 @@ weighted avg       0.99      0.99      0.99       180
 Logistic Regression
 ------------------------------
 Best parameters: {'C': 10, 'multi_class': 'auto', 'solver': 'lbfgs'}
-Cross-validation accuracies: [1.0, 0.9444444444444444, 1.0, 0.9444444444444444, 1.0, 1.0, 1.0, 1.0, 0.9444444444444444, 1.0]
-Mean accuracy: 0.9833 (±0.0255)
+Cross-validation accuracies: [1.0, 0.9444444444444444, 1.0, 0.9444444444444444, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+Mean accuracy: 0.9889 (±0.0222)
 
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.99      0.98      0.98        90
-           1       0.98      0.99      0.98        90
+           0       0.99      0.99      0.99        90
+           1       0.99      0.99      0.99        90
 
-    accuracy                           0.98       180
-   macro avg       0.98      0.98      0.98       180
-weighted avg       0.98      0.98      0.98       180
+    accuracy                           0.99       180
+   macro avg       0.99      0.99      0.99       180
+weighted avg       0.99      0.99      0.99       180
 
