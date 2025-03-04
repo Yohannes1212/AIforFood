@@ -1,0 +1,108 @@
+{
+    "model_comparisons": {
+        "SVM": {
+            "with_product_type": {
+                "best_score": 0.9722222222222223,
+                "best_params": {
+                    "C": 100,
+                    "gamma": 0.1,
+                    "kernel": "rbf"
+                }
+            },
+            "without_product_type": {
+                "best_score": 0.9722222222222223,
+                "best_params": {
+                    "C": 100,
+                    "gamma": "auto",
+                    "kernel": "rbf"
+                }
+            },
+            "performance_difference": 0.0
+        },
+        "Random Forest": {
+            "with_product_type": {
+                "best_score": 0.9888888888888889,
+                "best_params": {
+                    "max_depth": null,
+                    "min_samples_leaf": 1,
+                    "min_samples_split": 2,
+                    "n_estimators": 200
+                }
+            },
+            "without_product_type": {
+                "best_score": 0.9944444444444445,
+                "best_params": {
+                    "max_depth": null,
+                    "min_samples_leaf": 1,
+                    "min_samples_split": 2,
+                    "n_estimators": 300
+                }
+            },
+            "performance_difference": -0.005555555555555536
+        },
+        "KNN": {
+            "with_product_type": {
+                "best_score": 0.9444444444444443,
+                "best_params": {
+                    "metric": "manhattan",
+                    "n_neighbors": 3,
+                    "weights": "distance"
+                }
+            },
+            "without_product_type": {
+                "best_score": 0.9444444444444443,
+                "best_params": {
+                    "metric": "manhattan",
+                    "n_neighbors": 3,
+                    "weights": "distance"
+                }
+            },
+            "performance_difference": 0.0
+        },
+        "Neural Network": {
+            "with_product_type": {
+                "best_score": 0.9500000000000002,
+                "best_params": {
+                    "activation": "relu",
+                    "alpha": 0.0001,
+                    "hidden_layer_sizes": [
+                        100,
+                        50
+                    ],
+                    "learning_rate": "constant"
+                }
+            },
+            "without_product_type": {
+                "best_score": 0.9277777777777778,
+                "best_params": {
+                    "activation": "relu",
+                    "alpha": 0.01,
+                    "hidden_layer_sizes": [
+                        100
+                    ],
+                    "learning_rate": "constant"
+                }
+            },
+            "performance_difference": 0.022222222222222365
+        },
+        "Logistic Regression": {
+            "with_product_type": {
+                "best_score": 0.9166666666666666,
+                "best_params": {
+                    "C": 100,
+                    "multi_class": "auto",
+                    "solver": "lbfgs"
+                }
+            },
+            "without_product_type": {
+                "best_score": 0.8833333333333332,
+                "best_params": {
+                    "C": 100,
+                    "multi_class": "auto",
+                    "solver": "lbfgs"
+                }
+            },
+            "performance_difference": 0.03333333333333344
+        }
+    }
+}

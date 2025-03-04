@@ -71,3 +71,113 @@ def tune_hyperparameters(X, y, model_name, param_grid):
         'best_score': grid_search.best_score_,
         'best_model': grid_search.best_estimator_
     } 
+    
+def compare_feature_sets(X_with_product, X_without_product, y, model_name, param_grid):
+    """
+    Compare model performance with and without product type features
+    
+    Parameters:
+    -----------
+    X_with_product : array-like
+        Feature matrix including product type
+    X_without_product : array-like
+        Feature matrix excluding product type
+    y : array-like
+        Target variable
+    model_name : str
+        Name of the model to use
+    param_grid : dict
+        Parameter grid for the specified model
+        
+    Returns:
+    --------
+    dict
+        Dictionary containing results for both feature sets
+    """
+    print(f"\nTuning {model_name} with product type features...")
+    results_with_product = tune_hyperparameters(X_with_product, y, model_name, param_grid)
+    
+    print(f"\nTuning {model_name} without product type features...")
+    results_without_product = tune_hyperparameters(X_without_product, y, model_name, param_grid)
+    
+    return {
+        'with_product_type': results_with_product,
+        'without_product_type': results_without_product
+    }
+
+def print_comparison_results(results, model_name):
+    """
+    Print detailed comparison results
+    
+    Parameters:
+    -----------
+    results : dict
+        Dictionary containing results for both feature sets
+    model_name : str
+        Name of the model being compared
+    """
+    print(f"\n{'='*50}")
+    print(f"Comparison Results for {model_name}")
+    print(f"{'='*50}")
+    
+    print("\nResults with product type:")
+    print(f"Best score: {results['with_product_type']['best_score']:.4f}")
+    print(f"Best parameters: {results['with_product_type']['best_params']}")
+    
+    print("\nResults without product type:")
+    print(f"Best score: {results['without_product_type']['best_score']:.4f}")
+    print(f"Best parameters: {results['without_product_type']['best_params']}")
+    
+    # Calculate performance difference
+    diff = results['with_product_type']['best_score'] - results['without_product_type']['best_score']
+    print(f"\nPerformance difference (with - without): {diff:.4f}")
+    
+    # Provide recommendation
+    if abs(diff) < 0.02:
+        print("\nRecommendation: Consider using the model without product type for better generalization,")
+        print("as the performance difference is minimal (<2%).")
+    elif diff > 0:
+        print("\nRecommendation: Consider using the model with product type,")
+        print("as it shows significantly better performance.")
+    else:
+        print("\nRecommendation: Use the model without product type,")
+        print("as it shows better performance and provides better generalization.")
+
+def run_all_models_comparison(X_with_product, X_without_product, y):
+    """
+    Run comparison for all models
+    
+    Parameters:
+    -----------
+    X_with_product : array-like
+        Feature matrix including product type
+    X_without_product : array-like
+        Feature matrix excluding product type
+    y : array-like
+        Target variable
+        
+    Returns:
+    --------
+    dict
+        Dictionary containing results for all models
+    """
+    param_grids = get_param_grids()
+    all_results = {}
+    
+    for model_name in param_grids.keys():
+        print(f"\n{'#'*70}")
+        print(f"Running comparison for {model_name}")
+        print(f"{'#'*70}")
+        
+        results = compare_feature_sets(
+            X_with_product,
+            X_without_product,
+            y,
+            model_name,
+            param_grids[model_name]
+        )
+        
+        print_comparison_results(results, model_name)
+        all_results[model_name] = results
+    
+    return all_results
