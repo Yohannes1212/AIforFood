@@ -1,6 +1,0 @@
-Model,Accuracy without Storage Condition,Accuracy with Storage Condition,Improvement (%),p-value,Significant
-SVM,0.9667 ± 0.0667,0.9667 ± 0.0667,0.00%,1.0000,No
-Random Forest,0.9667 ± 0.0667,0.9667 ± 0.0667,0.00%,nan,No
-KNN,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No
-Neural Network,0.9833 ± 0.0500,0.9667 ± 0.0667,-1.67%,0.3434,No
-Logistic Regression,0.9833 ± 0.0500,0.9833 ± 0.0500,0.00%,nan,No
