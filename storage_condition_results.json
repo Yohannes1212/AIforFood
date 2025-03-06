@@ -1,8 +1,8 @@
 {
     "with_product_type": {
         "SVM": {
-            "C": 100,
-            "gamma": "scale",
+            "C": 10,
+            "gamma": 0.1,
             "kernel": "rbf"
         },
         "Random Forest": {
@@ -12,35 +12,38 @@
             "n_estimators": 200
         },
         "KNN": {
-            "metric": "manhattan",
-            "n_neighbors": 3,
+                "metric": "manhattan",
+                "n_neighbors": 3,
             "weights": "distance"
         },
         "Neural Network": {
-            "activation": "relu",
+            "activation": "tanh",
             "alpha": 0.0001,
             "hidden_layer_sizes": [
-                100
-            ],
-            "learning_rate": "constant"
+                    50
+                ],
+                "learning_rate": "constant",
+                "max_iter": 2000
+                
         },
         "Logistic Regression": {
-            "C": 100,
+            "C": 10,
             "multi_class": "auto",
-            "solver": "lbfgs"
+            "solver": "lbfgs",
+            "max_iter": 1000
         }
     },
     "without_product_type": {
         "SVM": {
             "C": 100,
-            "gamma": "scale",
+            "gamma": 0.01,
             "kernel": "rbf"
         },
         "Random Forest": {
             "max_depth": null,
             "min_samples_leaf": 1,
             "min_samples_split": 2,
-            "n_estimators": 200
+            "n_estimators": 100
         },
         "KNN": {
             "metric": "manhattan",
@@ -51,14 +54,16 @@
             "activation": "relu",
             "alpha": 0.0001,
             "hidden_layer_sizes": [
-                100
-            ],
-            "learning_rate": "constant"
+                    100
+                ],
+                "learning_rate": "constant",
+                "max_iter": 2000
         },
         "Logistic Regression": {
-            "C": 10,
+            "C": 100,
             "multi_class": "auto",
-            "solver": "lbfgs"
+            "solver": "lbfgs",
+            "max_iter": 2000
         }
     }
 }

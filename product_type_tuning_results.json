@@ -1,85 +1,66 @@
 {
     "with_storage_condition": {
-        "SVM": 
-            {
-                "C": 10,
-                "gamma": "scale",
-                "kernel": "linear"
-            }
-        ,
-        "Random Forest": 
-            {
-                "max_depth": null,
-                "min_samples_leaf": 1,
-                "min_samples_split": 2,
-                "n_estimators": 100
-            }
-        ,
-        "KNN": 
-            {
-                "metric": "manhattan",
-                "n_neighbors": 3,
-                "weights": "distance"
-            }
-        ,
-        "Neural Network": 
-            {
-                "activation": "relu",
-                "alpha": 0.0001,
-                "hidden_layer_sizes": [
-                    50,
-                    50
-                ],
-                "learning_rate": "constant"
-            }
-        ,
-        "Logistic Regression": 
-            {
-                "C": 10,
-                "multi_class": "multinomial",
-                "solver": "lbfgs"
-            }
-        
+        "SVM": {
+            "C": 100,
+            "gamma": 0.01,
+            "kernel": "rbf"
+        },
+        "Random Forest": {
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "n_estimators": 100
+        },
+        "KNN": {
+            "metric": "manhattan",
+            "n_neighbors": 3,
+            "weights": "distance"
+        },
+        "Neural Network": {
+            "activation": "relu",
+            "alpha": 0.0001,
+            "hidden_layer_sizes": [
+                100,
+                50
+            ],
+            "learning_rate": "constant"
+        },
+        "Logistic Regression": {
+            "C": 10,
+            "multi_class": "multinomial",
+            "solver": "lbfgs"
+        }
     },
     "without_storage_condition": {
-        "SVM": 
-            {
-                "C": 0.1,
-                "gamma": "scale",
-                "kernel": "linear"
-            }
-        ,
-        "Random Forest": 
-            {
-                "max_depth": null,
-                "min_samples_leaf": 1,
-                "min_samples_split": 2,
-                "n_estimators": 100
-            }
-        ,
-        "KNN": 
-            {
-                "metric": "manhattan",
-                "n_neighbors": 3,
-                "weights": "uniform"
-            }
-        ,
-        "Neural Network": 
-            {
-                "activation": "relu",
-                "alpha": 0.0001,
-                "hidden_layer_sizes": [
+        "SVM": {
+            "C": 0.1,
+            "gamma": "scale",
+            "kernel": "linear"
+        },
+        "Random Forest": {
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "n_estimators": 100
+        },
+        "KNN": {
+            "metric": "manhattan",
+            "n_neighbors": 3,
+            "weights": "uniform"
+        },
+        "Neural Network": {
+            "activation": "relu",
+            "alpha": 0.0001,
+            "hidden_layer_sizes": [
+                    100,
                     50
                 ],
-                "learning_rate": "constant"
-            }
-        ,
-        "Logistic Regression": 
-            {
-                "C": 0.1,
-                "multi_class": "auto",
-                "solver": "lbfgs"
-            }
-        
+            "learning_rate": "constant"
+        },
+        "Logistic Regression": {
+                "C": 100,
+                    "multi_class": "auto",
+            "solver": "lbfgs"
+        }
     }
 }

@@ -4,26 +4,26 @@ Product Type Classification Analysis Summary
 1. Best Performing Models:
 
 Without Storage Condition:
-- Best Model: Random Forest
-- Accuracy: 0.9889 ± 0.0222
+- Best Model: Neural Network
+- Accuracy: 0.9833 ± 0.0500
 
 With Storage Condition:
 - Best Model: KNN
-- Accuracy: 0.9944 ± 0.0167
+- Accuracy: 0.9833 ± 0.0500
 
 2. Impact of Storage Condition:
               Model Accuracy without Storage Condition Accuracy with Storage Condition Improvement (%) p-value Significant
-                SVM                    0.9833 ± 0.0255                 0.9833 ± 0.0255           0.00%  1.0000          No
-      Random Forest                    0.9889 ± 0.0222                 0.9889 ± 0.0222           0.00%     nan          No
-                KNN                    0.9889 ± 0.0222                 0.9944 ± 0.0167           0.56%  0.3434          No
-     Neural Network                    0.9778 ± 0.0272                 0.9722 ± 0.0373          -0.57%  0.3434          No
-Logistic Regression                    0.9833 ± 0.0255                 0.9833 ± 0.0255           0.00%  1.0000          No
+                SVM                    0.9667 ± 0.0667                 0.9667 ± 0.0667           0.00%  1.0000          No
+      Random Forest                    0.9667 ± 0.0667                 0.9667 ± 0.0667           0.00%     nan          No
+                KNN                    0.9667 ± 0.0667                 0.9833 ± 0.0500           1.72%  0.3434          No
+     Neural Network                    0.9833 ± 0.0500                 0.9667 ± 0.0667          -1.69%  0.3434          No
+Logistic Regression                    0.9833 ± 0.0500                 0.9833 ± 0.0500           0.00%     nan          No
 
 3. Additional Insights:
 -----------------------
 
 Number of models with significant improvement: 0
-Model with best improvement: KNN (0.56%)
+Model with best improvement: KNN (1.72%)
 
 Overall Recommendation:
 Storage condition information does not significantly improve classification performance.

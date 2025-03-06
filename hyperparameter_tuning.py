@@ -58,7 +58,7 @@ def tune_hyperparameters(X, y, model_name, param_grid):
     grid_search = GridSearchCV(
         param_grid['model'],
         param_grid['params'],
-        cv=10,  # Using 10-fold CV for tuning
+        cv=10,
         scoring='accuracy',
         n_jobs=-1,
         verbose=1
@@ -69,31 +69,12 @@ def tune_hyperparameters(X, y, model_name, param_grid):
     return {
         'best_params': grid_search.best_params_,
         'best_score': grid_search.best_score_,
-        'best_model': grid_search.best_estimator_
-    } 
-    
+        'best_model': grid_search.best_estimator_,
+        'cv_results': grid_search.cv_results_
+    }
+
 def compare_feature_sets(X_with_product, X_without_product, y, model_name, param_grid):
-    """
-    Compare model performance with and without product type features
-    
-    Parameters:
-    -----------
-    X_with_product : array-like
-        Feature matrix including product type
-    X_without_product : array-like
-        Feature matrix excluding product type
-    y : array-like
-        Target variable
-    model_name : str
-        Name of the model to use
-    param_grid : dict
-        Parameter grid for the specified model
-        
-    Returns:
-    --------
-    dict
-        Dictionary containing results for both feature sets
-    """
+    """Compare model performance with and without product type features"""
     print(f"\nTuning {model_name} with product type features...")
     results_with_product = tune_hyperparameters(X_with_product, y, model_name, param_grid)
     
@@ -106,16 +87,7 @@ def compare_feature_sets(X_with_product, X_without_product, y, model_name, param
     }
 
 def print_comparison_results(results, model_name):
-    """
-    Print detailed comparison results
-    
-    Parameters:
-    -----------
-    results : dict
-        Dictionary containing results for both feature sets
-    model_name : str
-        Name of the model being compared
-    """
+    """Print detailed comparison results"""
     print(f"\n{'='*50}")
     print(f"Comparison Results for {model_name}")
     print(f"{'='*50}")

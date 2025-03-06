@@ -1,6 +1,6 @@
 Model,Accuracy without Product,Accuracy with Product,Improvement (%),p-value,Significant
-SVM,0.9500 ± 0.0389,0.9167 ± 0.0669,-3.33%,0.1405,No
-Random Forest,0.9667 ± 0.0444,0.9667 ± 0.0509,0.00%,1.0000,No
-KNN,0.9056 ± 0.0660,0.9056 ± 0.0660,0.00%,nan,No
-Neural Network,0.9278 ± 0.0558,0.9167 ± 0.0569,-1.11%,0.6424,No
-Logistic Regression,0.8833 ± 0.0803,0.9000 ± 0.0778,1.67%,0.1934,No
+SVM,0.9056 ± 0.0862,0.8889 ± 0.0786,-1.67%,0.5203,No
+Random Forest,0.9722 ± 0.0448,0.9667 ± 0.0444,-0.56%,0.3434,No
+KNN,0.9222 ± 0.0754,0.9222 ± 0.0754,0.00%,nan,No
+Neural Network,0.9056 ± 0.0660,0.8556 ± 0.0969,-5.00%,0.0676,No
+Logistic Regression,0.8333 ± 0.1165,0.8556 ± 0.1030,2.22%,0.3434,No
