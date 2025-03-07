@@ -14,20 +14,19 @@
         "KNN": {
             "metric": "manhattan",
             "n_neighbors": 3,
-            "weights": "distance"
+            "weights": "uniform"
         },
         "Neural Network": {
             "activation": "relu",
             "alpha": 0.0001,
             "hidden_layer_sizes": [
-                100,
-                50
-            ],
+                    50
+                ],
             "learning_rate": "constant"
         },
         "Logistic Regression": {
-            "C": 10,
-            "multi_class": "multinomial",
+            "C": 100,
+            "multi_class": "auto",
             "solver": "lbfgs"
         }
     },
@@ -52,14 +51,13 @@
             "activation": "relu",
             "alpha": 0.0001,
             "hidden_layer_sizes": [
-                    100,
                     50
                 ],
             "learning_rate": "constant"
         },
         "Logistic Regression": {
-                "C": 100,
-                    "multi_class": "auto",
+            "C": 0.1,
+            "multi_class": "auto",
             "solver": "lbfgs"
         }
     }
