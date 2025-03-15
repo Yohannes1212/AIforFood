@@ -4,26 +4,26 @@ Storage Condition Classification Analysis Summary
 1. Best Performing Models:
 
 Without Product Type:
-- Best Model: Random Forest
-- Accuracy: 0.9722 ± 0.0448
+- Best Model: SVM
+- Accuracy: 0.9111 ± 0.0539
 
 With Product Type:
-- Best Model: Random Forest
-- Accuracy: 0.9667 ± 0.0444
+- Best Model: SVM
+- Accuracy: 0.9222 ± 0.0509
 
 2. Impact of Product Type:
               Model Accuracy without Product Accuracy with Product Improvement (%) p-value Significant
-                SVM          0.9056 ± 0.0862       0.8889 ± 0.0786          -1.84%  0.5203          No
-      Random Forest          0.9722 ± 0.0448       0.9667 ± 0.0444          -0.57%  0.3434          No
-                KNN          0.9222 ± 0.0754       0.9222 ± 0.0754           0.00%     nan          No
-     Neural Network          0.9056 ± 0.0660       0.8556 ± 0.0969          -5.52%  0.0676          No
-Logistic Regression          0.8333 ± 0.1165       0.8556 ± 0.1030           2.67%  0.3434          No
+                SVM          0.9111 ± 0.0539       0.9222 ± 0.0509           1.22%  0.1778          No
+      Random Forest          0.9111 ± 0.0478       0.9222 ± 0.0444           1.22%  0.4766          No
+                KNN          0.8833 ± 0.0369       0.8833 ± 0.0369           0.00%     nan          No
+     Neural Network          0.8944 ± 0.0272       0.8889 ± 0.0304          -0.62%  0.7489          No
+Logistic Regression          0.8611 ± 0.0843       0.8833 ± 0.0667           2.58%  0.0993          No
 
 3. Additional Insights:
 -----------------------
 
 Number of models with significant improvement: 0
-Model with best improvement: Logistic Regression (2.67%)
+Model with best improvement: Logistic Regression (2.58%)
 
 Overall Recommendation:
 Product type information does not significantly improve classification performance.

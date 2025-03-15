@@ -1,15 +1,15 @@
 {
     "with_product_type": {
         "SVM": {
-            "C": 100,
+            "C": 89.06204386161681,
             "gamma": "scale",
             "kernel": "rbf"
         },
         "Random Forest": {
-            "max_depth": null,
+            "max_depth": 10,
             "min_samples_leaf": 1,
-            "min_samples_split": 2,
-            "n_estimators": 200
+            "min_samples_split": 3,
+            "n_estimators": 137
         },
         "KNN": {
             "metric": "manhattan",
@@ -18,29 +18,31 @@
         },
         "Neural Network": {
             "activation": "relu",
-            "alpha": 0.0001,
+            "alpha": 0.009363008785133489,
             "hidden_layer_sizes": [
                 100
             ],
-            "learning_rate": "constant"
+            "learning_rate_init": 0.0021586905952512975,
+            "solver": "adam"
         },
         "Logistic Regression": {
-            "C": 100,
-            "multi_class": "auto",
-            "solver": "lbfgs"
+            "C": 38.9677289689482,
+            "multi_class": "multinomial",
+            "penalty": "l2",
+            "solver": "newton-cg"
         }
     },
     "without_product_type": {
         "SVM": {
-            "C": 100,
+            "C": 89.06204386161681,
             "gamma": "scale",
             "kernel": "rbf"
         },
         "Random Forest": {
-            "max_depth": null,
+            "max_depth": 10,
             "min_samples_leaf": 1,
-            "min_samples_split": 2,
-            "n_estimators": 200
+            "min_samples_split": 3,
+            "n_estimators": 137
         },
         "KNN": {
             "metric": "manhattan",
@@ -49,16 +51,18 @@
         },
         "Neural Network": {
             "activation": "relu",
-            "alpha": 0.0001,
+            "alpha": 0.009363008785133489,
             "hidden_layer_sizes": [
                 100
             ],
-            "learning_rate": "constant"
+            "learning_rate_init": 0.0021586905952512975,
+            "solver": "adam"
         },
         "Logistic Regression": {
-            "C": 10,
-            "multi_class": "auto",
-            "solver": "lbfgs"
+            "C": 38.9677289689482,
+            "multi_class": "multinomial",
+            "penalty": "l2",
+            "solver": "newton-cg"
         }
     }
 }
