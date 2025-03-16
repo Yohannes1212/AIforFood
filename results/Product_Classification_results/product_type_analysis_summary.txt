@@ -1,0 +1,59 @@
+Product Type Classification Analysis Summary
+==================================================
+
+1. Best Performing Models:
+
+Without Storage Condition:
+- Best Model: Random Forest
+- Accuracy: 0.9889 ± 0.0136
+
+With Storage Condition:
+- Best Model: KNN
+- Accuracy: 0.9944 ± 0.0111
+
+2. Impact of Storage Condition:
+              Model Accuracy without Storage Accuracy with Storage Improvement (%) p-value Significant
+                SVM          0.9833 ± 0.0136       0.9833 ± 0.0136           0.00%     nan          No
+      Random Forest          0.9889 ± 0.0136       0.9889 ± 0.0136           0.00%     nan          No
+                KNN          0.9889 ± 0.0136       0.9944 ± 0.0111           0.56%  0.3739          No
+     Neural Network          0.9833 ± 0.0136       0.9944 ± 0.0111           1.13%  0.1778          No
+Logistic Regression          0.9833 ± 0.0136       0.9944 ± 0.0111           1.13%  0.1778          No
+
+3. ROC AUC Analysis:
+-----------------
+
+SVM:
+- Macro AUC with storage condition: 0.9785
+- Macro AUC without storage condition: 0.9785
+- Difference: 0.0000
+
+Random Forest:
+- Macro AUC with storage condition: 0.9953
+- Macro AUC without storage condition: 0.9958
+- Difference: -0.0005
+
+KNN:
+- Macro AUC with storage condition: 1.0000
+- Macro AUC without storage condition: 1.0000
+- Difference: 0.0000
+
+Neural Network:
+- Macro AUC with storage condition: 0.9996
+- Macro AUC without storage condition: 0.9922
+- Difference: 0.0074
+
+Logistic Regression:
+- Macro AUC with storage condition: 0.9996
+- Macro AUC without storage condition: 0.9983
+- Difference: 0.0014
+
+
+4. Additional Insights:
+-----------------------
+
+Number of models with significant improvement: 0
+Model with best improvement: Neural Network (1.13%) (Significant: No)
+
+Overall Recommendation:
+Storage condition information does not significantly improve product type classification.
+Consider using Random Forest without storage condition for simplicity and generalization.
