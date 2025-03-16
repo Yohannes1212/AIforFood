@@ -1,0 +1,48 @@
+LDA Storage Condition Classification Analysis Summary
+==================================================
+
+1. LDA Performance as a Classifier:
+
+LDA Without Product Type:
+- Accuracy: 0.5167 ± 0.0598
+
+LDA With Product Type:
+- Accuracy: 0.5278 ± 0.1097
+
+LDA Improvement with Product Type: 2.15%
+
+2. Best Performing Models:
+
+Without Product Type:
+- Best Model: Neural Network+LDA
+- Accuracy: 0.5389 ± 0.0889
+
+With Product Type:
+- Best Model: Neural Network+LDA
+- Accuracy: 0.5611 ± 0.1210
+
+3. Impact of Product Type with LDA:
+                  Model Accuracy without Product Accuracy with Product Improvement (%) p-value Significant
+                KNN+LDA          0.5167 ± 0.0598       0.5444 ± 0.1033           5.38%  0.4300          No
+                    LDA          0.5167 ± 0.0598       0.5278 ± 0.1097           2.15%  0.7780          No
+Logistic Regression+LDA          0.5389 ± 0.0853       0.5389 ± 0.1225           0.00%  1.0000          No
+     Neural Network+LDA          0.5389 ± 0.0889       0.5611 ± 0.1210           4.12%  0.2943          No
+      Random Forest+LDA          0.5222 ± 0.0774       0.4944 ± 0.0774          -5.32%  0.4130          No
+                SVM+LDA          0.5056 ± 0.0478       0.4944 ± 0.0643          -2.20%  0.4766          No
+
+4. Additional Insights:
+-----------------------
+
+Number of models with significant improvement: 0
+Model with best improvement: KNN+LDA (5.38%) (Significant: No)
+
+Overall Recommendation:
+Product type information does not significantly improve LDA-based storage condition classification.
+Consider using Neural Network+LDA without product type for simplicity and generalization.
+
+5. LDA-specific Insights:
+-----------------------
+- LDA reduces the high-dimensional spectral data to a lower-dimensional space defined by the discriminant functions.
+- The first discriminant function captures the most variance between storage condition classes.
+- The LDA projection visualizations show how well the storage conditions are separated in the lower-dimensional space.
+- The feature importance analysis reveals which spectral features are most discriminative for storage condition classification.

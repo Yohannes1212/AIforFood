@@ -1,0 +1,16 @@
+{
+    "without_product_type": {
+        "SVM": 0.9111111111111111,
+        "Random Forest": 0.9111111111111111,
+        "KNN": 0.8833333333333334,
+        "Neural Network": 0.8722222222222223,
+        "Logistic Regression": 0.861111111111111
+    },
+    "with_product_type": {
+        "SVM": 0.9222222222222223,
+        "Random Forest": 0.9222222222222222,
+        "KNN": 0.8833333333333334,
+        "Neural Network": 0.8666666666666668,
+        "Logistic Regression": 0.8833333333333332
+    }
+}

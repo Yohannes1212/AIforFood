@@ -1,8 +1,8 @@
 {
     "with_storage_condition": {
         "SVM": {
-            "C": 38.00329214045197,
-            "gamma": 0.026415118294000537,
+            "C": 15.702970884055382,
+            "gamma": 0.0012000827091452932,
             "kernel": "rbf"
         },
         "Random Forest": {
@@ -18,11 +18,11 @@
         },
         "Neural Network": {
             "activation": "relu",
-            "alpha": 0.008065429868602328,
+            "alpha": 0.007168573438476171,
             "hidden_layer_sizes": [
                 50
             ],
-            "learning_rate_init": 0.008319939418114052,
+            "learning_rate_init": 0.008901755405312056,
             "solver": "adam"
         },
         "Logistic Regression": {
@@ -34,8 +34,8 @@
     },
     "without_storage_condition": {
         "SVM": {
-            "C": 38.00329214045197,
-            "gamma": 0.026415118294000537,
+            "C": 15.702970884055382,
+            "gamma": 0.0012000827091452932,
             "kernel": "rbf"
         },
         "Random Forest": {
@@ -51,11 +51,11 @@
         },
         "Neural Network": {
             "activation": "relu",
-            "alpha": 0.008065429868602328,
+            "alpha": 0.007168573438476171,
             "hidden_layer_sizes": [
                 50
             ],
-            "learning_rate_init": 0.008319939418114052,
+            "learning_rate_init": 0.008901755405312056,
             "solver": "adam"
         },
         "Logistic Regression": {

@@ -4,56 +4,56 @@ Storage Condition Classification Analysis Summary
 1. Best Performing Models:
 
 Without Product Type:
-- Best Model: SVM
-- Accuracy: 0.9111 ± 0.0539
+- Best Model: Random Forest
+- Accuracy: 0.9611 ± 0.0500
 
 With Product Type:
-- Best Model: SVM
-- Accuracy: 0.9222 ± 0.0509
+- Best Model: Random Forest
+- Accuracy: 0.9667 ± 0.0369
 
 2. Impact of Product Type:
               Model Accuracy without Product Accuracy with Product Improvement (%) p-value Significant
-                SVM          0.9111 ± 0.0539       0.9222 ± 0.0509           1.22%  0.1778          No
-      Random Forest          0.9111 ± 0.0478       0.9222 ± 0.0444           1.22%  0.4766          No
-                KNN          0.8833 ± 0.0369       0.8833 ± 0.0369           0.00%     nan          No
-     Neural Network          0.8722 ± 0.0624       0.8667 ± 0.0733          -0.64%  0.7780          No
-Logistic Regression          0.8611 ± 0.0843       0.8833 ± 0.0667           2.58%  0.0993          No
+                SVM          0.9278 ± 0.0434       0.9389 ± 0.0389           1.20%  0.4433          No
+      Random Forest          0.9611 ± 0.0500       0.9667 ± 0.0369           0.58%  0.7263          No
+                KNN          0.9167 ± 0.0714       0.9167 ± 0.0714           0.00%     nan          No
+     Neural Network          0.8500 ± 0.0898       0.8611 ± 0.0833           1.31%  0.4433          No
+Logistic Regression          0.8444 ± 0.0648       0.8611 ± 0.0669           1.97%  0.4344          No
 
 3. ROC AUC Analysis:
 -----------------
 
 SVM:
-- Macro AUC with product type: 0.9913
-- Macro AUC without product type: 0.9846
-- Difference: 0.0068
+- Macro AUC with product type: 0.9916
+- Macro AUC without product type: 0.9894
+- Difference: 0.0022
 
 Random Forest:
-- Macro AUC with product type: 0.9995
-- Macro AUC without product type: 0.9996
-- Difference: -0.0001
+- Macro AUC with product type: 0.9991
+- Macro AUC without product type: 0.9997
+- Difference: -0.0006
 
 KNN:
 - Macro AUC with product type: 0.9977
-- Macro AUC without product type: 0.9974
-- Difference: 0.0003
+- Macro AUC without product type: 0.9976
+- Difference: 0.0000
 
 Neural Network:
-- Macro AUC with product type: 0.9760
-- Macro AUC without product type: 0.9706
-- Difference: 0.0055
+- Macro AUC with product type: 0.9543
+- Macro AUC without product type: 0.9521
+- Difference: 0.0022
 
 Logistic Regression:
-- Macro AUC with product type: 0.9699
-- Macro AUC without product type: 0.9476
-- Difference: 0.0222
+- Macro AUC with product type: 0.9556
+- Macro AUC without product type: 0.9243
+- Difference: 0.0313
 
 
 4. Additional Insights:
 -----------------------
 
 Number of models with significant improvement: 0
-Model with best improvement: Logistic Regression (2.58%) (Significant: No)
+Model with best improvement: Logistic Regression (1.97%) (Significant: No)
 
 Overall Recommendation:
 Product type information does not significantly improve classification performance.
-Consider using SVM without product type for simplicity and generalization.
+Consider using Random Forest without product type for simplicity and generalization.

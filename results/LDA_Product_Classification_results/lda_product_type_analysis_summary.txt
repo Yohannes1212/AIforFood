@@ -1,0 +1,48 @@
+LDA Product Type Classification Analysis Summary
+==================================================
+
+1. LDA Performance as a Classifier:
+
+LDA Without Storage Condition:
+- Accuracy: 0.7556 ± 0.1015
+
+LDA With Storage Condition:
+- Accuracy: 0.7667 ± 0.0906
+
+LDA Improvement with Storage Condition: 1.47%
+
+2. Best Performing Models:
+
+Without Storage Condition:
+- Best Model: SVM+LDA
+- Accuracy: 0.7611 ± 0.1033
+
+With Storage Condition:
+- Best Model: Random Forest+LDA
+- Accuracy: 0.7722 ± 0.0984
+
+3. Impact of Storage Condition with LDA:
+                  Model Accuracy without Storage Accuracy with Storage Improvement (%) p-value Significant
+                KNN+LDA          0.7611 ± 0.1033       0.7667 ± 0.0906           0.73%  0.8276          No
+                    LDA          0.7556 ± 0.1015       0.7667 ± 0.0906           1.47%  0.6483          No
+Logistic Regression+LDA          0.7611 ± 0.1033       0.7667 ± 0.0906           0.73%  0.8276          No
+     Neural Network+LDA          0.7556 ± 0.1015       0.7667 ± 0.0906           1.47%  0.6483          No
+      Random Forest+LDA          0.7611 ± 0.1033       0.7722 ± 0.0984           1.46%  0.6702          No
+                SVM+LDA          0.7611 ± 0.1033       0.7611 ± 0.1173          -0.00%  1.0000          No
+
+4. Additional Insights:
+-----------------------
+
+Number of models with significant improvement: 0
+Model with best improvement: LDA (1.47%) (Significant: No)
+
+Overall Recommendation:
+Storage condition information does not significantly improve LDA-based product type classification.
+Consider using SVM+LDA without storage condition for simplicity and generalization.
+
+5. LDA-specific Insights:
+-----------------------
+- LDA reduces the high-dimensional spectral data to a lower-dimensional space defined by the discriminant functions.
+- The first discriminant function captures the most variance between classes.
+- The LDA projection visualizations show how well the classes are separated in the lower-dimensional space.
+- The feature importance analysis reveals which spectral features are most discriminative for product type classification.

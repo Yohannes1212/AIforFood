@@ -160,7 +160,7 @@ def get_param_grids():
 def tune_hyperparameters(X, y, model_name, param_grid):
     """Perform hyperparameter tuning using either RandomizedSearchCV or GridSearchCV"""
     # Create stratified CV to maintain perfect class balance in each fold
-    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42) 
+    cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=42) 
     
     # Determine which search method to use based on model complexity
     if model_name in ["Random Forest", "SVM", "Logistic Regression", "Neural Network"]:

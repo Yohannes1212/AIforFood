@@ -16,36 +16,36 @@ With Storage Condition:
                 SVM          0.9833 ± 0.0136       0.9944 ± 0.0111           1.13%  0.1778          No
       Random Forest          0.9889 ± 0.0136       0.9889 ± 0.0136           0.00%     nan          No
                 KNN          0.9889 ± 0.0136       0.9944 ± 0.0111           0.56%  0.3739          No
-     Neural Network          0.9833 ± 0.0222       0.9889 ± 0.0136           0.56%  0.7040          No
-Logistic Regression          0.9833 ± 0.0136       0.9944 ± 0.0111           1.13%  0.1778          No
+     Neural Network          0.9889 ± 0.0136       0.9889 ± 0.0136           0.00%  1.0000          No
+Logistic Regression          0.9889 ± 0.0136       0.9667 ± 0.0208          -2.25%  0.0161         Yes
 
 3. ROC AUC Analysis:
 -----------------
 
 SVM:
 - Macro AUC with storage condition: 1.0000
-- Macro AUC without storage condition: 0.9975
-- Difference: 0.0025
+- Macro AUC without storage condition: 0.9823
+- Difference: 0.0177
 
 Random Forest:
-- Macro AUC with storage condition: 0.9953
-- Macro AUC without storage condition: 0.9958
-- Difference: -0.0005
+- Macro AUC with storage condition: 0.9952
+- Macro AUC without storage condition: 0.9960
+- Difference: -0.0008
 
 KNN:
 - Macro AUC with storage condition: 1.0000
-- Macro AUC without storage condition: 1.0000
-- Difference: 0.0000
+- Macro AUC without storage condition: 0.9998
+- Difference: 0.0002
 
 Neural Network:
 - Macro AUC with storage condition: 0.9994
-- Macro AUC without storage condition: 0.9990
-- Difference: 0.0004
+- Macro AUC without storage condition: 0.9972
+- Difference: 0.0022
 
 Logistic Regression:
-- Macro AUC with storage condition: 0.9996
-- Macro AUC without storage condition: 0.9983
-- Difference: 0.0014
+- Macro AUC with storage condition: 0.9827
+- Macro AUC without storage condition: 0.9985
+- Difference: -0.0158
 
 
 4. Additional Insights:

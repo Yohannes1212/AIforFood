@@ -1,0 +1,68 @@
+{
+    "with_storage_condition": {
+        "SVM": {
+            "C": 0.1,
+            "gamma": "scale",
+            "kernel": "linear"
+        },
+        "Random Forest": {
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "n_estimators": 50
+        },
+        "KNN": {
+            "metric": "manhattan",
+            "n_neighbors": 3,
+            "weights": "distance"
+        },
+        "Neural Network": {
+            "activation": "relu",
+            "alpha": 0.0001,
+            "hidden_layer_sizes": [
+                50
+            ],
+            "learning_rate_init": 0.01,
+            "solver": "adam"
+        },
+        "Logistic Regression": {
+            "C": 0.1,
+            "multi_class": "ovr",
+            "penalty": "l2",
+            "solver": "newton-cg"
+        }
+    },
+    "without_storage_condition": {
+        "SVM": {
+            "C": 0.1,
+            "gamma": "scale",
+            "kernel": "linear"
+        },
+        "Random Forest": {
+            "max_depth": null,
+            "min_samples_leaf": 1,
+            "min_samples_split": 2,
+            "n_estimators": 50
+        },
+        "KNN": {
+            "metric": "manhattan",
+            "n_neighbors": 3,
+            "weights": "uniform"
+        },
+        "Neural Network": {
+            "activation": "relu",
+            "alpha": 0.0001,
+            "hidden_layer_sizes": [
+                100
+            ],
+            "learning_rate_init": 0.01,
+            "solver": "adam"
+        },
+        "Logistic Regression": {
+            "C": 0.1,
+            "multi_class": "ovr",
+            "penalty": "l2",
+            "solver": "newton-cg"
+        }
+    }
+}
