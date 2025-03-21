@@ -14,38 +14,38 @@ With Storage Condition:
 2. Impact of Storage Condition:
               Model Accuracy without Storage Accuracy with Storage Improvement (%) p-value Significant
                 SVM          0.9833 ± 0.0136       0.9944 ± 0.0111           1.13%  0.1778          No
-      Random Forest          0.9889 ± 0.0136       0.9889 ± 0.0136           0.00%     nan          No
+      Random Forest          0.9889 ± 0.0136       0.9833 ± 0.0136          -0.56%  0.3739          No
                 KNN          0.9889 ± 0.0136       0.9944 ± 0.0111           0.56%  0.3739          No
-     Neural Network          0.9889 ± 0.0136       0.9889 ± 0.0136           0.00%  1.0000          No
-Logistic Regression          0.9889 ± 0.0136       0.9667 ± 0.0208          -2.25%  0.0161         Yes
+     Neural Network          0.9833 ± 0.0136       0.9778 ± 0.0208          -0.56%  0.3739          No
+Logistic Regression          0.9833 ± 0.0136       0.9722 ± 0.0248          -1.13%  0.1778          No
 
 3. ROC AUC Analysis:
 -----------------
 
 SVM:
-- Macro AUC with storage condition: 1.0000
-- Macro AUC without storage condition: 0.9823
-- Difference: 0.0177
+- Macro AUC with storage condition: 0.9999
+- Macro AUC without storage condition: 0.9864
+- Difference: 0.0135
 
 Random Forest:
-- Macro AUC with storage condition: 0.9952
-- Macro AUC without storage condition: 0.9960
-- Difference: -0.0008
+- Macro AUC with storage condition: 0.9969
+- Macro AUC without storage condition: 0.9965
+- Difference: 0.0004
 
 KNN:
 - Macro AUC with storage condition: 1.0000
-- Macro AUC without storage condition: 0.9998
-- Difference: 0.0002
+- Macro AUC without storage condition: 0.9996
+- Difference: 0.0004
 
 Neural Network:
-- Macro AUC with storage condition: 0.9994
-- Macro AUC without storage condition: 0.9972
-- Difference: 0.0022
+- Macro AUC with storage condition: 0.9993
+- Macro AUC without storage condition: 0.9973
+- Difference: 0.0020
 
 Logistic Regression:
-- Macro AUC with storage condition: 0.9827
-- Macro AUC without storage condition: 0.9985
-- Difference: -0.0158
+- Macro AUC with storage condition: 0.9874
+- Macro AUC without storage condition: 0.9979
+- Difference: -0.0105
 
 
 4. Additional Insights:
