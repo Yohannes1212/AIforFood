@@ -1,7 +1,7 @@
 {
     "with_storage_condition": {
         "SVM": {
-            "C": 0.1,
+            "C": 10,
             "gamma": "scale",
             "kernel": "linear"
         },
@@ -28,7 +28,7 @@
         "Logistic Regression": {
             "C": 0.1,
             "multi_class": "ovr",
-            "penalty": "l2",
+            "penalty": null,
             "solver": "newton-cg"
         }
     },

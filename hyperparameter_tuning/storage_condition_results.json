@@ -6,10 +6,10 @@
             "kernel": "rbf"
         },
         "Random Forest": {
-            "max_depth": 20,
+            "max_depth": 10,
             "min_samples_leaf": 1,
             "min_samples_split": 2,
-            "n_estimators": 138
+            "n_estimators": 246
         },
         "KNN": {
             "metric": "manhattan",
@@ -17,18 +17,18 @@
             "weights": "distance"
         },
         "Neural Network": {
-            "activation": "tanh",
-            "alpha": 0.004048815181755697,
+            "activation": "relu",
+            "alpha": 0.008065429868602328,
             "hidden_layer_sizes": [
-                100
+                50
             ],
-            "learning_rate_init": 0.001055221171236024,
+            "learning_rate_init": 0.008319939418114052,
             "solver": "adam"
         },
         "Logistic Regression": {
-            "C": 15.699452033620265,
+            "C": 58.775116566384824,
             "multi_class": "ovr",
-            "penalty": "l2",
+            "penalty": null,
             "solver": "newton-cg"
         }
     },
@@ -39,10 +39,10 @@
             "kernel": "rbf"
         },
         "Random Forest": {
-            "max_depth": 20,
+            "max_depth": 10,
             "min_samples_leaf": 1,
             "min_samples_split": 2,
-            "n_estimators": 138
+            "n_estimators": 246
         },
         "KNN": {
             "metric": "manhattan",
@@ -50,18 +50,18 @@
             "weights": "distance"
         },
         "Neural Network": {
-            "activation": "tanh",
-            "alpha": 0.004048815181755697,
+            "activation": "relu",
+            "alpha": 0.008065429868602328,
             "hidden_layer_sizes": [
-                100
+                50
             ],
-            "learning_rate_init": 0.001055221171236024,
+            "learning_rate_init": 0.008319939418114052,
             "solver": "adam"
         },
         "Logistic Regression": {
-            "C": 15.699452033620265,
+            "C": 58.775116566384824,
             "multi_class": "ovr",
-            "penalty": "l2",
+            "penalty": null,
             "solver": "newton-cg"
         }
     }

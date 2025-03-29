@@ -1,7 +1,7 @@
 Model,Accuracy without Storage Condition,Accuracy with Storage Condition,Improvement (%),p-value,Significant
-KNN+LDA,0.7611 ± 0.1033,0.7667 ± 0.0906,0.56%,0.8276,No
-LDA,0.7556 ± 0.1015,0.7667 ± 0.0906,1.11%,0.6483,No
-Logistic Regression+LDA,0.7611 ± 0.1033,0.7667 ± 0.0906,0.56%,0.8276,No
-Neural Network+LDA,0.7556 ± 0.1015,0.7667 ± 0.0906,1.11%,0.6483,No
-Random Forest+LDA,0.7611 ± 0.1033,0.7722 ± 0.0984,1.11%,0.6702,No
-SVM+LDA,0.7611 ± 0.1033,0.7611 ± 0.1173,-0.00%,1.0000,No
+KNN+LDA,0.9500 ± 0.0764,0.9833 ± 0.0500,3.33%,0.1679,No
+LDA,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No
+Logistic Regression+LDA,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No
+Neural Network+LDA,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No
+Random Forest+LDA,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No
+SVM+LDA,0.9667 ± 0.0667,0.9833 ± 0.0500,1.67%,0.3434,No

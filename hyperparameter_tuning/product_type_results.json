@@ -1,9 +1,9 @@
 {
     "with_storage_condition": {
         "SVM": {
-            "C": 15.702970884055382,
-            "gamma": 0.0012000827091452932,
-            "kernel": "rbf"
+            "C": 7.119418600172988,
+            "gamma": "auto",
+            "kernel": "linear"
         },
         "Random Forest": {
             "max_depth": 10,
@@ -34,9 +34,9 @@
     },
     "without_storage_condition": {
         "SVM": {
-            "C": 15.702970884055382,
-            "gamma": 0.0012000827091452932,
-            "kernel": "rbf"
+            "C": 7.119418600172988,
+            "gamma": "auto",
+            "kernel": "linear"
         },
         "Random Forest": {
             "max_depth": 10,
