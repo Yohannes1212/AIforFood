@@ -4,41 +4,40 @@ LDA Storage Condition Classification Analysis Summary
 1. LDA Performance as a Classifier:
 
 LDA Without Product Type:
-- Accuracy: 0.8500 ± 0.1384
+- Accuracy: 0.5500 ± 0.1203
 
 LDA With Product Type:
-- Accuracy: 0.9000 ± 0.1106
+- Accuracy: 0.5778 ± 0.1319
 
-LDA Improvement with Product Type: 5.88%
+LDA Improvement with Product Type: 5.05%
 
 2. Best Performing Models:
 
 Without Product Type:
 - Best Model: Random Forest+LDA
-- Accuracy: 0.8667 ± 0.1247
+- Accuracy: 0.5611 ± 0.1124
 
 With Product Type:
-- Best Model: LDA
-- Accuracy: 0.9000 ± 0.1106
+- Best Model: Neural Network+LDA
+- Accuracy: 0.6056 ± 0.1203
 
 3. Impact of Product Type with LDA:
                   Model Accuracy without Product Accuracy with Product Improvement (%) p-value Significant
-                KNN+LDA          0.8500 ± 0.1384       0.8000 ± 0.1633          -5.88%  0.0811          No
-                    LDA          0.8500 ± 0.1384       0.9000 ± 0.1106           5.88%  0.0811          No
-Logistic Regression+LDA          0.8500 ± 0.1740       0.8167 ± 0.1740          -3.92%  0.4433          No
-     Neural Network+LDA          0.8667 ± 0.1453       0.8167 ± 0.1740          -5.77%  0.0811          No
-      Random Forest+LDA          0.8667 ± 0.1247       0.8167 ± 0.1572          -5.77%  0.1934          No
-                SVM+LDA          0.8500 ± 0.1740       0.8333 ± 0.1667          -1.96%  0.5911          No
+                KNN+LDA          0.5278 ± 0.1118       0.5778 ± 0.1474           9.47%  0.1341          No
+                    LDA          0.5500 ± 0.1203       0.5778 ± 0.1319           5.05%  0.2729          No
+Logistic Regression+LDA          0.5222 ± 0.0969       0.6000 ± 0.1333          14.89%  0.0248         Yes
+     Neural Network+LDA          0.5389 ± 0.0705       0.6056 ± 0.1203          12.37%  0.0301         Yes
+      Random Forest+LDA          0.5611 ± 0.1124       0.5611 ± 0.1302           0.00%  1.0000          No
+                SVM+LDA          0.3778 ± 0.0333       0.4056 ± 0.0558           7.35%  0.0522          No
 
 4. Additional Insights:
 -----------------------
 
-Number of models with significant improvement: 0
-Model with best improvement: LDA (5.88%) (Significant: No)
+Number of models with significant improvement: 2
+Model with best improvement: Logistic Regression+LDA (14.89%) (Significant: Yes)
 
 Overall Recommendation:
-Product type information does not significantly improve LDA-based storage condition classification.
-Consider using Random Forest+LDA without product type for simplicity and generalization.
+Including product type information appears beneficial for LDA-based storage condition classification.
 
 5. LDA-specific Insights:
 -----------------------

@@ -16,21 +16,21 @@ With Storage Condition:
                 SVM          0.9833 ± 0.0255       0.9889 ± 0.0222           0.56%  0.5911          No
       Random Forest          0.9889 ± 0.0222       0.9889 ± 0.0222           0.00%     nan          No
                 KNN          0.9889 ± 0.0222       0.9944 ± 0.0167           0.56%  0.3434          No
-     Neural Network          0.9833 ± 0.0255       0.9833 ± 0.0255           0.00%     nan          No
-Logistic Regression          0.9833 ± 0.0255       0.9889 ± 0.0222           0.56%  0.5911          No
+     Neural Network          0.9778 ± 0.0272       0.9833 ± 0.0255           0.57%  0.3434          No
+Logistic Regression          0.9833 ± 0.0255       0.9778 ± 0.0369          -0.56%  0.6783          No
 
 3. ROC AUC Analysis:
 -----------------
 
 SVM:
-- Macro AUC with storage condition: 0.9998
+- Macro AUC with storage condition: 0.9996
 - Macro AUC without storage condition: 0.9847
-- Difference: 0.0151
+- Difference: 0.0149
 
 Random Forest:
 - Macro AUC with storage condition: 0.9979
-- Macro AUC without storage condition: 0.9956
-- Difference: 0.0023
+- Macro AUC without storage condition: 0.9963
+- Difference: 0.0016
 
 KNN:
 - Macro AUC with storage condition: 1.0000
@@ -39,20 +39,20 @@ KNN:
 
 Neural Network:
 - Macro AUC with storage condition: 0.9989
-- Macro AUC without storage condition: 0.9889
-- Difference: 0.0100
+- Macro AUC without storage condition: 0.9970
+- Difference: 0.0019
 
 Logistic Regression:
-- Macro AUC with storage condition: 0.9998
-- Macro AUC without storage condition: 0.9811
-- Difference: 0.0186
+- Macro AUC with storage condition: 0.9960
+- Macro AUC without storage condition: 0.9973
+- Difference: -0.0012
 
 
 4. Additional Insights:
 -----------------------
 
 Number of models with significant improvement: 0
-Model with best improvement: SVM (0.56%) (Significant: No)
+Model with best improvement: Neural Network (0.57%) (Significant: No)
 
 Overall Recommendation:
 Storage condition information does not significantly improve product type classification.
